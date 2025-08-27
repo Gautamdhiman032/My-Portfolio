@@ -1,0 +1,1007 @@
+/* ====== RESPONSIVE BREAKPOINTS FOR NAVIGATION_SECTION  ====== */
+/*  Common (Below 1100px) */
+@media screen and (max-width: 1100px) {
+    #navbar {
+        display: none;
+    }
+
+    .links ul li:first-child {
+        display: none;
+    }
+
+    #link-2 {
+        display: inline-block;
+        border-bottom: 2px solid orange;
+    }
+
+    #item-logo {
+        font-size: 1rem;
+        width: 25%;
+    }
+
+    .navbar-section {
+        grid-template-columns: 1fr auto;
+    }
+
+    .links {
+        justify-self: end;
+
+    }
+}
+
+/*  Small + Medium Phones */
+@media screen and (max-width: 600px) {
+    #item-logo {
+        padding-left: 10px;
+    }
+
+    .links {
+        padding-right: 10px;
+    }
+}
+
+/*  Large Phones + Small Tablets */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    #item-logo {
+        padding-left: 15px;
+    }
+
+    .links {
+        padding-right: 15px;
+    }
+}
+
+/*  Small Tabs + Large Tabs */
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+    #item-logo {
+        padding-left: 15px;
+    }
+
+    .links {
+        padding-right: 15px;
+    }
+}
+
+/* Desktop (Above 1100px) */
+@media screen and (min-width: 1101px) {
+    #navbar {
+        display: block;
+    }
+
+    .links ul li:first-child {
+        display: block;
+    }
+}
+
+
+/* ====== RESPONSIVE BREAKPOINTS FOR MAIN_SECTION  ====== */
+
+/*  Common (Below 1100px) */
+@media screen and (max-width: 1100px) {
+    .items {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .wrapper h1 {
+        margin-left: 0;
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .box {
+        margin-left: 0;
+    }
+}
+
+/*  Small + Medium Phones */
+@media screen and (max-width: 600px) {
+    .items {
+        display: none;
+    }
+}
+
+/* Large Phones + Small Tabs */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .items {
+        display: none;
+    }
+}
+
+/*  Small Tabs + Large Tabs */
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+    .items {
+        display: none;
+    }
+}
+
+
+
+/* ====== RESPONSIVE BREAKPOINTS FOR HEADING_SECTION  ====== */
+
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+    .headline-section {
+        height: 700px;
+    }
+
+    .text {
+        width: 70%;
+        height: 60%;
+    }
+
+    .text p {
+        padding: 0 20px;
+
+    }
+}
+
+/* Large phones + tablets */
+@media screen and (max-width: 900px) and (min-width: 780px) {
+    .headline-section {
+        height: 660px;
+    }
+
+    .text {
+        width: 81%;
+        height: 55%;
+    }
+
+    .text h1 {
+        font-size: 4.3rem;
+    }
+
+    .text p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+}
+
+/* Medium phones */
+@media screen and (max-width: 780px) and (min-width: 590px) {
+    .headline-section {
+        height: 650px;
+    }
+
+    .text {
+        width: 80%;
+        height: 43%;
+    }
+
+    .text h1 {
+        font-size: 3.9rem;
+        padding: 0 30px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 590px) and (min-width: 491px) {
+    .headline-section {
+        height: 560px;
+        padding: 20px 0px;
+    }
+
+    .text {
+        height: 40%;
+        width: 90%;
+    }
+
+    .text h1 {
+        font-size: 3.4rem;
+    }
+
+    .text p {
+        font-size: 12px;
+    }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 490px) and (min-width: 413px) {
+    .headline-section {
+        height: 561px;
+    }
+
+    .text {
+        height: 40%;
+        width: 90%;
+    }
+
+    .text h1 {
+        font-size: 3rem;
+    }
+
+    .text p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 412px) and (min-width:361px) {
+    .headline-section {
+        height: 539px;
+    }
+
+    .text {
+        height: 45%;
+        width: 90%;
+    }
+
+    .text h1 {
+        font-size: 2.5rem;
+        padding: 0px 30px;
+    }
+
+    .text p {
+        font-size: 12.5px;
+    }
+}
+
+/* Extra small phones in portrait (≤ 360px) */
+@media screen and (max-width: 360px) and (orientation: portrait) {
+    .headline-section {
+        padding: 15px 8px;
+        height: 550px;
+    }
+
+    .text {
+        width: 95%;
+        height: 39%;
+
+    }
+
+    .text h1 {
+        font-size: 2.5rem;
+    }
+
+    .text p {
+        font-size: 11px;
+        padding: 0 15px;
+    }
+}
+
+
+/* ============= RESPONSIVE BREAKPOINTS FOR ABOUT_SECTION ============ */
+/* ------------- Common tablet + phone adjustments */
+@media screen and (max-width: 1100px) {
+    .detail {
+        width: 85%;
+    }
+
+    .detail p {
+        padding: 0 50px;
+        text-align: center;
+    }
+}
+
+/* Large phones + tablets */
+@media screen and (min-width: 900px) {
+    .detail h1 {
+        font-size: 6em;
+    }
+
+    .detail p {
+        padding: 0px 20px;
+        font-size: 18px;
+    }
+}
+
+/* Medium phones */
+@media screen and (max-width: 780px) and (min-width:590px) {
+    .detail {
+        width: 90%;
+    }
+
+    .detail h1 {
+        font-size: 5.4em;
+    }
+
+    .detail p {
+        font-size: 16px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 590px) and (min-width: 490px) {
+    .about-details {
+        padding: 20px 10px;
+    }
+
+    .detail h1 {
+        font-size: 4.6em;
+    }
+
+    .detail p {
+        font-size: 15px;
+        padding: 0px 20px;
+    }
+}
+
+/* Extra small phones  */
+@media screen and (max-width: 490px) and (min-width:361px) {
+    .detail h1 {
+        font-size: 4.2em;
+    }
+
+    .detail p {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+}
+
+/* Extra small phones in portrait (≤ 360px) */
+@media screen and (max-width: 360px) and (orientation: portrait) {
+    .about-details {
+        padding: 15px 8px;
+    }
+
+    .detail {
+        width: 95%;
+    }
+
+    .detail h1 {
+        font-size: 3.2em;
+        /* smaller for tiny screens */
+    }
+
+    .detail p {
+        font-size: 11px;
+        padding: 0 20px;
+    }
+}
+
+
+/* ====== RESPONSIVE BREAKPOINTS  For PROJECT_SECTION  ====== */
+
+/* -------------------Extra Small Phones (Portrait <= 360)---------------- */
+@media screen and (max-width: 360px) {
+
+    .project-section {
+        height: 1250px;
+        /* reduce height for small screens */
+    }
+
+    .project-heading h1 {
+        font-size: 1.8rem;
+        /* smaller heading */
+        text-align: center;
+        padding: 0 10px;
+        /* prevent text from touching edges */
+    }
+
+    .container {
+        gap: 15px;
+        /* slightly less gap */
+    }
+
+    .project-box {
+        max-width: 280px;
+        /* slightly smaller card */
+    }
+
+    .view-more-btn {
+        font-size: 0.9rem;
+        /* smaller button text */
+        padding: 8px 16px;
+    }
+}
+
+
+/* -------------Medium--Phones--------------------- */
+@media screen and (max-width: 590px) {
+
+    .project-section {
+        height: 1380px;
+    }
+
+    .project-heading h1 {
+        font-size: 2.1rem;
+    }
+
+    /* Hide second row entirely */
+    .second-row {
+        display: none;
+    }
+
+    /* Make container flex for single row */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Ensure cards are same size */
+    .project-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .view-more-btn {
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+
+
+/*----------------Small--Tablets (591px–768px)------------------- */
+@media screen and (max-width: 768px) and (min-width: 591px) {
+    .second-row {
+        display: contents;
+    }
+
+    .project-section {
+        height: auto;
+    }
+
+    .project-heading h1 {
+        font-size: 2.3rem;
+    }
+
+    .container {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+
+    .project-box {
+        max-width: 280px;
+        flex: 1 1 calc(50% - 25px);
+    }
+
+    /* Center the last card in its own row */
+    .project-box:last-child {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* --------------------Large--Tablets (769px–1024px) --------------------------*/
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+    .second-row {
+        display: contents;
+    }
+
+    .project-section {
+        height: auto;
+    }
+
+    .project-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-box {
+        max-width: 300px;
+        flex: 1 1 calc(50% - 30px);
+    }
+
+    .project-box:last-child {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* ====== RESPONSIVE BREAKPOINTS FOR TOOL'S__SECTION  ====== */
+/* -------------------Extra Small Phones (Portrait <= 360)---------------- */
+@media screen and (max-width: 360px) {
+    .tool-section {
+        height: 800px;
+    }
+
+    .tool-headline h1 {
+        font-size: 2.3rem;
+    }
+
+    .tool-section p {
+        font-size: 15px;
+        padding: 0px 20px;
+    }
+
+}
+
+/* -------------Medium--Phones--------------------- */
+@media screen and (max-width: 590px) {
+    .tool-section {
+        height: 750px;
+    }
+
+    .tool-headline h1 {
+        font-size: 2.3rem;
+    }
+
+    .tool-section p {
+        font-size: 13px;
+        margin-top: 85px;
+        padding: 0 20px;
+    }
+}
+
+/*----------------Small--Tablets (591px–768px)------------------- */
+@media screen and (max-width: 768px) and (min-width: 591px) {
+    .tool-section {
+        height: 805px;
+    }
+
+    .tool-section p {
+        margin-top: 135px;
+        padding: 0 70px;
+    }
+}
+
+/* --------------------Large--Tablets (769px–1024px)----------in this it doesn't need to give any media query for the large tab it access as a default..........------- */
+
+
+
+/* ====== RESPONSIVE BREAKPOINTS FOR EXPERIENCE__SECTION  ====== */
+/* 📱 Extra small phones (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .experience-section {
+        height: 620px;
+        padding: 35px 15px;
+    }
+
+    .experience-detail {
+        width: 100%;
+        height: 450px;
+        padding: 12px;
+        margin: 30px 0;
+    }
+
+    .experience-detail .exp-headline {
+        font-size: 34px;
+        padding: 12px 0;
+    }
+
+    .experience-detail p {
+        padding: 25px 7px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .exp-btn {
+        margin: 35px 0;
+    }
+
+    .exp-btn a {
+        padding: 10px 10px;
+        font-size: 11px;
+    }
+}
+
+/* 📱 Small-narrow phones (321px–360px) */
+@media screen and (max-width: 360px) and (min-width: 321px) {
+    .experience-section {
+        height: 628px;
+        padding: 38px 16px;
+    }
+
+    .experience-detail {
+        width: 100%;
+        height: 450px;
+        padding: 14px;
+    }
+
+    .experience-detail .exp-headline {
+        font-size: 34px;
+        /* between extra-small & small-phone size */
+        padding: 15px 0;
+    }
+
+    .experience-detail p {
+        padding: 25px 7px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .exp-btn {
+        margin: 50px 0px;
+    }
+
+    .exp-btn a {
+        padding: 10px 10px;
+        font-size: 11.5px;
+    }
+}
+
+
+/* 📱 Small phones (361px–480px) */
+@media screen and (max-width: 480px) and (min-width: 361px) {
+    .experience-section {
+        height: 650px;
+        padding: 40px 25px;
+    }
+
+    .experience-detail {
+        width: 100%;
+        height: 479px;
+        padding: 15px;
+    }
+
+    .experience-detail .exp-headline {
+        font-size: 35px;
+        padding: 25px 0;
+    }
+
+    .experience-detail p {
+        padding: 40px 8px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .exp-btn {
+        margin: 15px 0px;
+    }
+
+    .exp-btn a {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+}
+
+/* 📱 Medium phones (481px–590px) */
+@media screen and (max-width: 590px) and (min-width: 481px) {
+    .experience-section {
+        height: 650px;
+        padding: 50px 25px;
+    }
+
+    .experience-detail {
+        width: 95%;
+        height: 473px;
+    }
+
+    .experience-detail .exp-headline {
+        font-size: 39px;
+        padding: 45px 0;
+    }
+
+    .experience-detail p {
+        padding: 30px 25px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .exp-btn {
+        margin: 40px 0;
+    }
+
+    .exp-btn a {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+}
+
+/* 📱 Small tablets (591px–768px) */
+@media screen and (max-width: 768px) and (min-width: 591px) {
+    .experience-section {
+        height: 730px;
+        padding: 40px 0;
+    }
+
+    .experience-detail {
+        width: 85%;
+        height: 550px;
+        padding: 20px;
+    }
+
+    .experience-detail .exp-headline {
+        font-size: 2.7rem;
+        padding: 25px 0;
+    }
+
+    .experience-detail p {
+        padding: 30px 10px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .exp-btn {
+        margin: 40px 0;
+    }
+}
+
+/* 💻 Large tablets (769px–1100px) */
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+    .experience-section {
+        height: 610px;
+        padding: 40px 10px;
+    }
+
+    .experience-detail {
+        width: 85%;
+        height: auto;
+        padding: 0px 40px 60px 40px;
+    }
+
+    .experience-detail .exp-headline {
+        font-size: 2.8rem;
+        padding: 30px 20px;
+    }
+
+    .experience-detail p {
+        padding: 10px 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/* 🖥 Desktop (above 1100px) — already covered by default CSS */
+
+/* ====== RESPONSIVE BREAKPOINTS FOR CONTACT__SECTION  ====== */
+/* /* 📱 Small phones (max-width: 360px) */
+@media screen and (max-width: 360px) {
+    .contact-section {
+        height: auto;
+        /* Let it expand naturally */
+        padding: 40px 0;
+        /* Less padding */
+    }
+
+    .contact-detail {
+        width: 95%;
+        /* Use almost full width */
+    }
+
+    .contact-detail .contact-headline {
+        font-size: 29px;
+        /* Smaller heading */
+        padding: 15px 0;
+    }
+
+    .contact-detail p {
+        padding: 20px 15px;
+        /* Less side padding */
+        font-size: 9px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form {
+        width: 80%;
+        /* Full width form */
+        gap: 15px;
+        top: 0;
+    }
+
+    .contact-form label {
+        font-size: 11px;
+        margin-top: 20px;
+        /* Less vertical spacing */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 11px;
+        padding: 10px;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contact-form button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+/* 📱 Medium phones (361px - 480px) */
+@media screen and (min-width: 361px) and (max-width: 480px) {
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-detail {
+        width: 90%;
+    }
+
+    .contact-detail .contact-headline {
+        font-size: 34px;
+    }
+
+    .contact-detail p {
+        padding: 0px 1px;
+        font-size: 11px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+    }
+
+    .contact-form label {
+        font-size: 13px;
+    }
+
+    .contact-form {
+        width: 85%;
+    }
+}
+
+/* 📱 Large phones / Small tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .contact-detail {
+        width: 80%;
+    }
+
+    .contact-detail .contact-headline {
+        font-size: 40px;
+    }
+
+    .contact-detail p {
+        padding: 0px 1px;
+        font-size: 13px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contact-form {
+        width: 85%;
+    }
+}
+
+/* 💻 Large tablets (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-detail {
+        width: 70%;
+    }
+
+    .contact-detail .contact-headline {
+        font-size: 48px;
+    }
+
+    .contact-detail p {
+        padding: 0 2px;
+        font-size: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contact-form {
+        width: 70%;
+    }
+}
+
+/* 🖥️ Desktop (1025px and up) */
+@media screen and (min-width: 1025px) {
+    .contact-section {
+        padding: 80px 0;
+    }
+
+    .contact-detail {
+        width: 75%;
+    }
+
+    .contact-detail .contact-headline {
+        font-size: 50px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contact-detail p {
+        padding: 0 80px;
+        font-size: 15px;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+}
+
+
+/* ====== RESPONSIVE BREAKPOINTS FOR FOOTER__SECTION  ====== */
+/* 📱 Mobile (max-width: 600px) */
+@media screen and (max-width: 600px) {
+     .footer-section {
+        min-height: auto;
+        height: auto;
+        /* padding: 30px 0px; */
+    } 
+
+    .footer-logo p {
+        font-size: 1.5rem;
+        line-height: 2.5;
+        /* text-align: center; */ 
+    }
+
+    .footer-logo p a {
+        top: 5px;
+    }
+
+    .footer-link {
+        /* display: flex; */
+        flex-direction: row;
+        /* stack icons */
+        margin-top: 15px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .footer-link img {
+        margin-right: 0;
+        /* height: 20px;
+        width: 20px; */
+    }
+
+    .copyright-content {
+        /* width: auto; */
+        margin-top: 30px; 
+        height: auto; 
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    .copyright-content p {
+        font-size: 5px;
+        letter-spacing: 1.5px;
+
+    }
+}
+
+/* 📱 Very small phones (max-width: 360px) */
+@media screen and (max-width: 360px) {
+    .footer-logo p {
+        font-size: 1.1rem;
+    }
+
+    .footer-link img {
+        height: 18px;
+        width: 18px;
+    }
+    
+    .copyright-content {
+        /* width: auto; */
+        /* margin-top: 30px; */
+        /* height: auto; */
+        padding: 6px 0;
+        /* padding: 8px; */
+        /* text-align: center; */
+    }
+
+    .copyright-content p {
+        font-size: 5px;
+        letter-spacing: 1px;
+    }
+}

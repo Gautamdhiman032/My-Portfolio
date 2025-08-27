@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="screen and (max-width:1100px)">
+    <!-- Favicon -->
+    <link rel="icon" href="../../Assets/Favicon/favicon-img.png" type="image/png">
+    <!-- Goole font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <!-- Using AOS (Animation on scroll) in project section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+
+    <title>View Credential | Gautam Dhiman Portfolio</title>
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        color: #2a1303;
+        /* background-color: #eeeadd; */
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    :root {
+        --navbar-section-height: 60px;
+    }
+
+    /* NAVIGATION---SECTION---BAR*/
+    .navbar-section {
+        background-color: #f6f4ee;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        height: 95px;
+        border-bottom: 1px solid #2a1303;
+        padding: 0px 40px;
+    }
+
+
+    /* LOGO */
+    #item-logo {
+        justify-self: start;
+    }
+
+    #item-logo p {
+        margin: 0px;
+        line-height: 1.2;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.8rem;
+        /* Adjust as needed */
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        border-bottom: 2px solid orange;
+    }
+
+    #item-logo p>a {
+        text-decoration: none;
+        color: #2a1303;
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    /* NAVIGATION---LINKS---SECTION*/
+
+    .links ul {
+        display: flex;
+    }
+
+    .links ul li {
+        list-style: none;
+    }
+
+    .links ul li a {
+        color: #2a1303;
+        display: block;
+        margin: 8px 11px 0px 16px;
+        text-decoration: none;
+    }
+
+    #link-2 {
+        background-color: orange;
+        border: 1px solid #2a1303;
+        border-radius: 25px;
+        padding: 9px 13px;
+        cursor: pointer;
+        transition: 0.4s;
+
+    }
+
+    #link-2:hover {
+        color: #f7f5f4;
+    }
+
+
+
+
+    /*-----------ABOUT SECTION-----------*/
+    .about-section {
+        /* height: 1200px; */
+        height: auto;
+        min-height: 80vh;
+        width: 100%;
+        background: linear-gradient(#eeeadd, #f6f4ee);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 150px 20px 40px;
+    }
+
+    .about-detail {
+        height: 800px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* ✅ This centers the button horizontally */
+    }
+
+    .about-detail .about-headline {
+        color: #2a1303;
+        /* width: 100%; */
+        /* padding: 40px 0px; */
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 500;
+        font-family: serif;
+        font-style: italic;
+        letter-spacing: 1px;
+    }
+
+    .about-detail span {
+        color: orange;
+        font-style: italic;
+    }
+
+    .about-headline span {
+        color: orange;
+    }
+
+    .certificate {
+        display: flex;
+        margin: 80px 0px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .certificate img {
+        border: 1px solid #2a1303;
+        box-shadow: 0px 4px 70px #2a1303;
+        border-radius: 4px;
+        width: 50%;
+        height: 100%;
+    }
+
+
+
+    /*---------------FOOTER SECTION-----------------*/
+    .footer-section {
+        height: 200px;
+        width: 100%;
+        background: linear-gradient(#f6f4ee, #eeeadd);
+        border-top: 1px solid #2a1303;
+    }
+
+    /* Footer---Logo */
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo p {
+        line-height: 4;
+        font-family: 'Playfair Display', serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+
+    .footer-logo p a {
+        text-decoration: none;
+        color: #2a1303;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        position: relative;
+        top: 10px;
+    }
+
+    /* Footer---Link's */
+    .footer-link {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        margin-top: 9px;
+    }
+
+    .footer-link img {
+        height: 20px;
+        width: 20px;
+        margin-right: 1rem;
+    }
+
+    /* COPYRIGHT----CONTENT */
+    .copyright-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        background-color: #2a1303;
+        height: 34px;
+        width: 100%;
+    }
+
+    .copyright-content p {
+        font-size: 10px;
+        color: #f7f5f4;
+        letter-spacing: 2px;
+    }
+
+    /* ====== RESPONSIVE BREAKPOINTS FOR NAVIGATION__SECTION  ====== */
+    /* 📱 Extra Small Phones (max-width: 320px) */
+    @media screen and (max-width: 320px) {
+        .navbar-section {
+            height: 70px;
+            padding: 0px 15px;
+        }
+
+        #item-logo p {
+            font-size: 0.9rem;
+            border-bottom: 1px solid orange;
+        }
+
+        .links ul {
+            gap: 8px;
+        }
+
+        .links ul li a {
+            font-size: 0.8rem;
+            margin: 5px 6px 0px 6px;
+        }
+
+        #link-2 {
+            padding: 6px 10px;
+            font-size: 6px;
+        }
+    }
+
+    /* 📱 Small-narrow Phones (321px–360px) */
+    @media screen and (min-width: 321px) and (max-width: 360px) {
+        .navbar-section {
+            height: 75px;
+            padding: 0px 18px;
+        }
+
+        #item-logo p {
+            font-size: 1rem;
+        }
+
+        .links ul li a {
+            font-size: 0.85rem;
+            margin: 6px 8px 0px 8px;
+        }
+
+        #link-2 {
+            padding: 7px 11px;
+            font-size: 7px;
+        }
+    }
+
+    /* 📱 Small Phones (361px–480px) */
+    @media screen and (min-width: 361px) and (max-width: 480px) {
+        .navbar-section {
+            height: 80px;
+            padding: 0px 20px;
+        }
+
+        #item-logo p {
+            font-size: 1.2rem;
+        }
+
+        .links ul li a {
+            font-size: 0.9rem;
+            margin: 7px 10px 0px 10px;
+        }
+        
+        #link-2 {
+            padding: 8px 12px;
+            font-size: 9px;
+        }
+    }
+
+    /* 📱 Medium Phones (481px–590px) */
+    @media screen and (min-width: 481px) and (max-width: 590px) {
+        .navbar-section {
+            height: 85px;
+            padding: 0px 25px;
+        }
+
+        #item-logo p {
+            font-size: 1.2rem;
+        }
+
+        .links ul li a {
+            font-size: 1rem;
+            margin: 8px 12px 0px 12px;
+        }
+
+        #link-2 {
+            padding: 9px 13px;
+            font-size: 10px;
+        }
+    }
+    
+    /* 📱 Tablets (591px–768px) */
+    @media screen and (min-width: 591px) and (max-width: 768px) {
+        .navbar-section {
+            height: 90px;
+            padding: 0px 30px;
+        }
+        
+        #item-logo p {
+            font-size: 1.7rem;
+        }
+        
+        .links ul li a {
+            font-size: 1rem;
+            margin: 9px 13px 0px 13px;
+        }
+        
+        #link-2 {
+            padding: 10px 14px;
+            font-size: 1rem;
+        }
+    }
+    
+    /* 💻 Large Tablets & Small Laptops (769px–1100px) */
+    @media screen and (min-width: 769px) and (max-width: 1100px) {
+        .navbar-section {
+            height: 95px;
+            padding: 0px 35px;
+        }
+        
+        #item-logo p {
+            font-size: 1.8rem;
+        }
+
+        .links ul li a {
+            font-size: 1.05rem;
+        }
+
+        #link-2 {
+            padding: 10px 15px;
+            font-size: 1rem;
+        }
+    }
+
+
+/* ====== RESPONSIVE BREAKPOINTS FOR ABOUT SECTION ====== */
+
+/* 📱 Mobile (up to 480px) */
+@media screen and (max-width: 480px) {
+    .about-section {
+        min-height: auto;
+        padding: 120px 20px 20px;
+    }
+
+    .about-detail .about-headline {
+        font-size: 2rem; /* headline size for mobile */
+        line-height: 1.4;
+    }
+
+    .certificate img {
+        width: 85%;  /* image size for mobile */
+        height: auto;
+    }
+}
+
+/* 📱 Tablet (481px–768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .about-section {
+        min-height: 90vh;
+        padding: 140px 40px 30px;
+    }
+
+    .about-detail .about-headline {
+        font-size: 2.6rem; /* bigger headline for tablets */
+        line-height: 1.5;
+    }
+
+    .certificate img {
+        width: 70%;  /* image size for tablets */
+        height: auto;
+    }
+}
+
+/* 💻 Desktop (769px and above) */
+@media screen and (min-width: 769px) {
+    .about-section {
+        min-height: 80vh;
+        padding: 160px 60px 50px;
+    }
+
+    .about-detail .about-headline {
+        font-size: 3rem; /* large headline */
+        line-height: 1.6;
+    }
+
+    .certificate img {
+        width: 50%;  /* image smaller so it balances with text */
+        height: auto;
+    }
+}
+
+
+/* ====== RESPONSIVE BREAKPOINTS FOR FOOTER__SECTION  ====== */
+/* 📱 Mobile (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .footer-section {
+        height: auto;
+        /* let it expand naturally */
+        /* padding: 20px 0px; */
+    }
+
+    .footer-logo p {
+        font-size: 1.5rem;
+        line-height: 2.5;
+        text-align: center;
+    }
+
+    .footer-logo p a {
+        top: 5px;
+        /* reduce offset */
+    }
+
+    .footer-link {
+        display: flex;
+        flex-direction: inherit;
+        /* stack icons */
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .footer-link img {
+        margin-right: 0;
+        /* remove side margin */
+    }
+
+    .copyright-content {
+        width: auto;
+        /* margin-top: 30px; */
+        /* height: auto; */
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    .copyright-content p {
+        font-size: 6px;
+
+    }
+}
+
+/* 📱 Very small phones (max-width: 360px) */
+@media screen and (max-width: 360px) {
+    .footer-logo p {
+        font-size: 1.1rem;
+    }
+
+    .footer-link img {
+        height: 18px;
+        width: 18px;
+    }
+    
+    .copyright-content {
+        width: auto;
+        /* margin-top: 30px; */
+        /* height: auto; */
+        padding: 8px;
+        text-align: center;
+    }
+
+    .copyright-content p {
+        font-size: 5px;
+
+    }
+}
+</style>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,   // animation duration in ms
+            once: true        // animation runs only once
+        });
+    </script>
+
+
+    <!-- Navigation-Bar---Section -->
+    <section>
+        <header class="navbar-section">
+            <!-- LOGO -->
+            <div id="item-logo" data-aos="zoom-in">
+                <p><a href="certificate.html">View Credential</a></p>
+            </div>
+            <!-- links -->
+            <div class="links" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+                <ul>
+                    <li onclick="downloadFile()" id="link-2">Download Now</li>
+                </ul>
+            </div>
+        </header>
+    </section>
+
+    <!---------------------ABOUT SECTION OF THE CERTIFICATE------------------>
+    <section id="About">
+        <div class="about-section">
+            <div class="about-detail">
+                <h1 class="about-headline" data-aos="fade-in" data-aos-delay="750">"A glimpse of my <span>certified
+                        internship journey</span>."</h1>
+                <div class="certificate" data-aos="fade-up" data-aos-delay="900">
+                    <img src="../../Assets/My Certificate/Certificate for web designing by solitaire infosys.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------FOOTER OF THE PAGE---------------->
+
+    <footer id="footer">
+        <div class="footer-section">
+            <!-- Footer---Logo -->
+            <div class="footer-logo">
+                <p data-aos="zoom-in" data-aos-duration="1500"><a href="../index-main.html">Gautam Dhiman</a></p>
+            </div>
+            <!-- Footer---Links-Logo's -->
+            <div class="footer-link">
+                <a href="http://www.linkedin.com/in/gautam-dhiman-49044336a" target="_blank"><img
+                        src="../../Assets/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/Gautamdhiman032" target="_blank"><img src="../../Assets/github.png"
+                        alt="GitHub"></a>
+            </div>
+            <div class="copyright">
+                <div class="copyright-content">
+                    <p>© 2025 GAUTAM DHIMAN, All RIGHTS RESERVED | PRIVATE POLICY | TERMS & CONDITIONS</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript write Here!! -->
+    <script>
+
+        function downloadFile() {
+            const link = document.createElement("a");
+            // link.href = "Assets/My Certificate/Certificate for web designing by solitaire infosys.jpg";
+            link.href = "../../Assets/My Certificate/Certificate for web designing by solitaire infosys.jpg";
+
+            link.download = "My_Certificate.jpg";
+            link.click();
+        }
+    </script>
+
+</body>
+
+</html>

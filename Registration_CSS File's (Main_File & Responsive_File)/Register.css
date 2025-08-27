@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(0.42turn, #f6f4ee, #887f62e3);
+    overflow-x: hidden;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-text {
+    position: absolute;
+    font-size: 12rem;
+    color: rgba(255, 255, 255, 0.13);
+    z-index: 1;
+    transition: all 0.5s ease;
+    font-family: 'playfair Display', serif;
+    letter-spacing: 6px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    width: 30%;
+    border-radius: 25px;
+    backdrop-filter: blur(6px);
+    border: 1px solid #2a130386;
+    color: #2a1303;
+    padding: 50px;
+    z-index: 10;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 2em;
+    margin-top: 20px;
+    font-family: 'playfair Display', serif;
+}
+
+#loginForm p {
+    text-align: center;
+    margin: 14px 0px 20px 0px;
+    font-size: 15px;
+
+}
+
+.error {
+    font-size: 13px;
+    display: none;
+    text-align: center;
+    color: #ff0000;
+}
+
+.sub_title {
+    font-weight: 600;
+    margin: 5px 0;
+    font-family: 'playfair Display', serif;
+
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: baseline;
+}
+
+.form_style {
+    color: #2a1303;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+    width: 250px;
+    font-size: 15px;
+    /* border-radius: 4px; */
+    padding: 12px 12px;
+    border: none;
+    border-bottom: 1px solid #2a1303;
+    background-color: #2a130300;
+    transition: 0.4s;
+    background: none;
+
+
+}
+
+.form_style:hover,
+.form_style:focus {
+    border-bottom: 1px solid orange;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn {
+    background-color: orange;
+    color: #2a1303;
+    margin: 7px 0px;
+    padding: 12px 28px;
+    /* width: 100px; */
+    font-size: 15px;
+    font-family: 'playfair Display', serif;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #2a1303;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: rgb(255, 166, 0);
+    color: #f7f4f5;
+    transition: 0.4s;
+    cursor: pointer;
+}

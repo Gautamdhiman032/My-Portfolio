@@ -1,0 +1,82 @@
+/* Register-phone.css */
+
+/* Container adjustments for mobile */
+.container {
+    flex-direction: column;
+    padding: 20px;
+    height: 90vh;
+}
+
+.background-text {
+    font-size: 12rem;
+    text-align: center;
+    position: absolute;
+    letter-spacing: 3px;
+    /* display: none; */
+}
+
+/* Login container width */
+.login-container {
+    height: 350px;
+    max-width: 400px;
+    width: 70%;
+    padding: 35px;
+    backdrop-filter: blur(9px);
+}
+/* Title size */
+.title {
+    font-size: 1.5em;
+}
+
+
+/* Sub Title */
+.sub_title{
+    font-size: 11px;
+}
+
+/* Form input fields */
+.form_style {
+    width: 220px;
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+/* Button styling */
+.btn {
+    width: 40%;
+    font-size: 14px;
+    padding: 12px;
+}
+
+
+
+/* Small phones (portrait) */
+@media screen and (max-width: 480px) {
+    .background-text {
+        display: none;
+    }
+    .form_style {
+        width: 180px;
+    }
+}
+
+/* Medium phones & small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .background-text {
+        display: none;
+    }
+    .form_style {
+        width: 200px;
+    }
+}
+
+/* Large tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .background-text {
+        font-size: 10.2rem;
+    }
+    .form_style {
+        width: 230px;
+    }
+}

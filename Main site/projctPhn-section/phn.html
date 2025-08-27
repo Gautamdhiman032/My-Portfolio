@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="../../Assets/Favicon/favicon-img.png" type="image/png">
+    <!-- Goole font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <!-- Using AOS (Animation on scroll) in project section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+
+    <title>Projects | A Showcase of My Selected Work | Gautam Dhiman</title>
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        color: #2a1303;
+        /* background-color: #eeeadd; */
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    :root {
+        --navbar-section-height: 60px;
+    }
+
+    /* NAVIGATION-BAR-----SECTION */
+    /* NAVIGATION---SECTION---BAR*/
+    .navbar-section {
+        background-color: #f6f4ee;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        height: 95px;
+        border-bottom: 1px solid #2a1303;
+    }
+
+
+    /*--------LOGO--------*/
+    #item-logo {
+        justify-self: start;
+        padding-left: 30px;
+    }
+
+    #item-logo p {
+        margin: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        border-bottom: 2px solid orange;
+        line-height: 1.3;
+        padding: 0px 15px;
+    }
+
+    #item-logo p>a {
+        text-align: center;
+        text-decoration: none;
+        color: #2a1303;
+        outline: none;
+        border: none;
+        box-shadow: none;
+
+    }
+
+    /*---------PROJECT-SECTION---------*/
+    .project-section {
+        min-height: 100vh;
+        height: auto;
+        width: 100%;
+        background: linear-gradient(#f6f4ee, #eeeadd);
+        /* position:absolute; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 170px 60px 80px;
+        gap: 40px;
+
+    }
+
+    /*
+    .project-heading {
+        /* width: 100%; 
+        /* margin-bottom: 40px; 
+    }
+
+*/
+
+    .project-heading h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        font-weight: 500;
+        font-family: serif;
+        color: #2a1303;
+        letter-spacing: 1px;
+        font-style: italic;
+    }
+
+    /* Project Content (even if empty) */
+    .project-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 100%;
+        min-height: 200px;
+        /* Prevents collapse when empty */
+    }
+
+    .project-heading h1 span {
+        color: orange;
+    }
+
+
+    /* projects---cards */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+        /*----for use this to make it responsive-----*/
+        gap: 30px;
+        width: 100%;
+        max-width: 1200px;
+
+        margin: 0 auto;
+        padding: 0 20px;
+        justify-content: center;
+        /* center grid items horizontally; */
+    }
+
+    .project-box {
+        width: 350px;
+        height: 290px;
+        border: 1px solid #2a1303;
+        border-radius: 10px;
+    }
+
+    .card-front {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-front img {
+        height: 230px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        border-bottom: 1px solid #2a1303;
+    }
+
+    /* Row 2 with 2 centered projects css...  */
+    .second-row {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+    }
+    .second-row>.project-box{
+        height: 230px;
+        border: none;
+    }
+
+    /* card-button */
+
+    .card-body {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .btn-card {
+        background-color: rgb(255, 166, 0);
+        color: #2a1303;
+        border-radius: 40px;
+        /* padding: 8px 19px 8px 19px; */
+        margin-top: 30px;
+        border: 1px solid;
+    }
+
+    .btn-card a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px 30px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        /* font-style: italic; */
+    }
+
+    .btn-card:hover {
+        background-color: rgb(255, 166, 0);
+        color: #ffffff;
+        border: 1px solid #2a1303;
+        border-radius: 40px;
+        transition: 0.4s;
+    }
+
+    .view-more-wapper {
+        text-align: center;
+    }
+
+    .view-more-btn {
+        display: none;
+        margin: 20px;
+        background-color: #2a1303;
+        /* border: 1px solid #2a1303; */
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 15px;
+        text-decoration: none;
+        transition: all 0.4s ease;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .view-more-btn:hover {
+        color: #f7f5f4;
+        background-color: #2a1303c0;
+
+    }
+
+    /* ====== RESPONSIVE BREAKPOINTS FOR --- ( PROJECT_SECTION and NAV_SECTION) ====== */
+
+    /* -------------------Extra Small Phones (Portrait <= 360)---------------- */
+    @media screen and (max-width: 360px) {
+        .project-heading h1 {
+            font-size: 1.8rem;
+            /* smaller heading */
+            text-align: center;
+            /* padding: 100px 15px 40px; */
+            padding: 0 10px;
+            /* prevent text from touching edges */
+        }
+
+        .container {
+            gap: 15px;
+            /* slightly less gap */
+        }
+
+        .project-box {
+            max-width: 280px;
+            /* slightly smaller card */
+        }
+
+        .view-more-btn {
+            font-size: 0.9rem;
+            /* smaller button text */
+            padding: 8px 16px;
+        }
+    }
+
+    /* -------------Medium--Phones--------------------- */
+    @media screen and (max-width: 590px) {
+        #item-logo p {
+            font-size: 1.8rem;
+        }
+
+        .project-section {
+            min-height: 1800px;
+            padding: 140px 15px 40px;
+            gap: 30px;
+        }
+
+        .project-heading h1 {
+            font-size: 2.1rem;
+        }
+
+        /* Hide second row entirely */
+        .second-row {
+            /* display: contents; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Make container flex for single row */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Ensure cards are same size */
+        .project-box {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .view-more-btn {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    }
+
+    /*----------------Small--Tablets (591px–768px)------------------- */
+    @media screen and (max-width: 768px) and (min-width: 591px) {
+        .second-row {
+            display: contents;
+        }
+
+        .project-section {
+            min-height: 1400px;
+            padding: 150px 50px 20px;
+            gap: 35px;
+
+        }
+
+        .project-heading h1 {
+            font-size: 2.3rem;
+        }
+
+        .container {
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+            display: flex;
+        }
+
+        .project-box {
+            max-width: 280px;
+            flex: 1 1 calc(50% - 25px);
+        }
+
+        /* Center the last card in its own row */
+        .project-box:last-child {
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    /* --------------------Large--Tablets (769px–1024px) --------------------------*/
+    @media screen and (max-width: 1100px) and (min-width: 769px) {
+        .second-row {
+            display: contents;
+        }
+
+        .project-section {
+            min-height: 1705px;
+            padding: 160px 55px 80px;
+            gap: 38px;
+        }
+
+        .project-heading h1 {
+            font-size: 3.3rem;
+        }
+
+        .container {
+            display: flex;
+            gap: 70px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-box {
+            max-width: 300px;
+            flex: 1 1 calc(50% - 30px);
+        }
+
+        .project-box:last-child {
+            flex: 1 1 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+    /*------Footer-Section------*/
+    .footer-section {
+        height: 200px;
+        width: 100%;
+        background-color: #f6f4ee;
+        border-top: 1px solid #2a1303;
+    }
+
+    /*------Footer-Logos------*/
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo p {
+        font-family: 'Playfair Display', serif;
+        line-height: 4;
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+
+    .footer-logo p a {
+        text-decoration: none;
+        color: #2a1303;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        position: relative;
+        top: 10px;
+    }
+
+    /*------Footer-Link's------*/
+    .footer-link {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        margin-top: 9px;
+    }
+
+    .footer-link img {
+        height: 20px;
+        width: 20px;
+        margin-right: 1rem;
+    }
+
+    /*-------COPYRIGHT-CONTENT-------*/
+    .copyright-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        background-color: #2a1303;
+        height: 34px;
+        width: 100%;
+    }
+
+    .copyright-content p {
+        font-size: 10px;
+        color: #f7f5f4;
+        letter-spacing: 2px;
+    }
+
+
+    /* ====== RESPONSIVE BREAKPOINTS FOR FOOTER__SECTION  ====== */
+    /* 📱 Mobile (max-width: 600px) */
+    @media screen and (max-width: 600px) {
+        .footer-section {
+            height: auto;
+            /* let it expand naturally */
+            /* padding: 20px 0px; */
+        }
+
+        .footer-logo p {
+            font-size: 1.5rem;
+            line-height: 2.5;
+            text-align: center;
+        }
+
+        .footer-logo p a {
+            top: 5px;
+            /* reduce offset */
+        }
+
+        .footer-link {
+            display: flex;
+            flex-direction: inherit;
+            /* stack icons */
+            margin-top: 15px;
+            gap: 10px;
+        }
+
+        .footer-link img {
+            margin-right: 0;
+            /* remove side margin */
+        }
+
+        .copyright-content {
+            width: auto;
+            /* margin-top: 30px; */
+            /* height: auto; */
+            padding: 8px 0;
+            text-align: center;
+        }
+
+        .copyright-content p {
+            font-size: 6px;
+
+        }
+    }
+
+    /* 📱 Very small phones (max-width: 360px) */
+    @media screen and (max-width: 360px) {
+        .footer-logo p {
+            font-size: 1.1rem;
+        }
+
+        .footer-link img {
+            height: 18px;
+            width: 18px;
+        }
+
+        .copyright-content {
+            width: auto;
+            /* margin-top: 30px; */
+            /* height: auto; */
+            padding: 8px;
+            text-align: center;
+        }
+
+        .copyright-content p {
+            font-size: 5px;
+
+        }
+    }
+</style>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,   // animation duration in ms
+            once: true        // animation runs only once
+        });
+    </script>
+
+    <!-- Navigation-Bar---Section -->
+    <div class="wrapper">
+
+
+        <!-- HOME---SECTION -->
+        <section class="Home-section">
+            <header class="navbar-section">
+                <!-- LOGO -->
+                <div id="item-logo">
+                    <p data-aos="zoom-in" data-aos-duration="900"><a href="phn.html">Projects</a></p>
+                </div>
+            </header>
+        </section>
+
+        <!-- PROJECT---CONTENT---SECTION -->
+        <section id="Project">
+            <div class="project-section">
+                <!-- project--cards--thumbnails -->
+                <div class="project-heading" data-aos="fade-in" data-aos-duration="1500">
+                    <!--also use animation in this.....-->
+                    <h1>"A <span>showcase </span>of my <span>selected work</span>"</h1>
+                </div>
+
+                <div class="container">
+                    <div class="project-box" data-aos="zoom-in" data-aos-duration="1500">
+                        <!--also use animation in this.....-->
+                        <div class="card-front">
+                            <img src="../../Assets/Project card images/1.png" alt="Gautam Dhiman">
+                            <div class="card-body">
+                                <button class="btn-card">
+                                    <a href=" https://gautamdhiman032.github.io/Apple-webpage-clone/" target="_blank"
+                                        rel="noopene  noreferrer">View</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-box" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1500">
+                        <!--also use animation in this.....-->
+                        <div class="card-front">
+                            <img src="../../Assets/Project card images/2.png" alt="Gautam Dhiman">
+                            <div class="card-body">
+                                <button class="btn-card">
+                                    <a href=" https://gautamdhiman032.github.io/project-responsive-site/"
+                                        target="_blank" rel="noopener noreferrer">View</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-box" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1500">
+                        <!--also use animation in this.....-->
+                        <div class="card-front">
+                            <img src="../../Assets/Project card images/3.png" alt="Gautam Dhiman">
+                            <div class="card-body">
+                                <button class="btn-card">
+                                    <a href="https://gautamdhiman032.github.io/digital-alarm-clock/" target="_blank"
+                                        rel="noopener noreferrer">View</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 with 2 centered projects -->
+                    <div class="second-row">
+                        <div class="project-box" data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1500">
+                            <!--also use animation in this.....-->
+                            <div class="card-front">
+                                <img src="../../Assets/Project card images/4.png" alt="Project 4">
+                                <!-- 
+                                <div class="card-body">
+                                    <button class="btn-card">
+                                        <a href="https://your-link-to-project-4.com" target="_blank"
+                                            rel="noopener noreferrer">View</a>
+                                    </button> 
+                                </div>
+                                -->
+                            </div>
+                        </div>
+
+                        <div class="project-box" data-aos="zoom-in" data-aos-delay="450" data-aos-duration="1500">
+                            <!--also use animation in this.....-->
+                            <div class="card-front">
+                                <img src="../../Assets/Project card images/5.png" alt="Project 5">
+                                <!-- 
+                                <div class="card-body">
+                                        <button class="btn-card">
+                                        <a href="https://your-link-to-project-5.com" target="_blank"
+                                            rel="noopener noreferrer">View</a>
+                                    </button> 
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <footer id="footer">
+            <div class="footer-section">
+                <!-- Footer---Logo -->
+                <div class="footer-logo">
+                    <p data-aos="zoom-in" data-aos-duration="1500"><a href="../index-main.html">Gautam Dhiman</a></p>
+                </div>
+                <!-- Footer---Links-Logo's -->
+                <div class="footer-link">
+                    <a href="http://www.linkedin.com/in/gautam-dhiman-49044336a" target="_blank"><img
+                            src="../../Assets/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/Gautamdhiman032" target="_blank"><img src="../../Assets/github.png"
+                            alt="GitHub"></a>
+                </div>
+                <div class="copyright-content">
+                    <p>© 2025 GAUTAM DHIMAN, All RIGHTS RESERVED | PRIVATE POLICY | TERMS & CONDITIONS</p>
+                </div>
+            </div>
+    </div>
+    </footer>
+
+
+    </div>
+
+</body>
+
+</html>

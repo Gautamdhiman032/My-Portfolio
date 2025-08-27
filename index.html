@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="Registration_CSS File's (Main_File & Responsive_File)/Register.css">
+    <!-- Responsive Style for Mobile -->
+    <link rel="stylesheet" media="screen and (max-width: 1150px)"
+        href="Registration_CSS File's (Main_File & Responsive_File)/Register-phone.css">
+    <!-- Google font---link -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Assets/Favicon/favicon-img.png" type="image/x-icon">
+    <!-- Using AOS (Animation on scroll) in project section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <title>"Access My Portfolio" | Gautam Dhiman</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,   // animation duration in ms
+            once: true        // animation runs only once
+        });
+    </script>
+    <div class="container">
+        <div class="background-text" data-aos="zoom-in" data-aos-duration="3000">Welcome!</div>
+        <div class="login-container" data-aos="zoom-in" data-aos-duration="1400">
+            <h3 class="title" data-aos="zoom-in" data-aos-duration="1000">Login Now</h3>
+            <form id="loginForm">
+                <p class="error" id="error-message">Invalid username or password</p>
+                <div class="form_group">
+                    <label for="email" class="sub_title">Email</label>
+                    <input type="email" id="email" class="form_style">
+                </div>
+                <div class="form_group">
+                    <label for="password" class="sub_title">Password</label>
+                    <input type="password" id="password" class="form_style">
+                </div>
+                <div class="btn_container" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="700">
+                    <button class="btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", ((event) => {
+            event.preventDefault()
+
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+
+            const web_email_name = "gautamdhiman20@gmail.com";
+            const web_password = "2004";
+            if (email === web_email_name && password === web_password) {
+                window.location.href = "Main site/index-main.html"
+            } else {
+                document.getElementById("error-message").style.display = "block"
+            }
+
+        }))
+
+    </script>
+</body>
+
+</html>

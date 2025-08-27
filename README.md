@@ -14,6 +14,10 @@ Optimized for desktops, tablets, and smartphones — ensuring a smooth and consi
 ## 💻 Live Demo
 👉 [Click here to view live](https://gautamdhiman032.github.io/My-Portfolio/)  
 
+## 🔑 LogIn (email / password)
+- Email  (gautamdhiman20@gmail.com)
+- Password (2004)
+
 ## ✨ Key Features
 - Responsive design for all screen sizes  
 - Smooth animations and transitions  
